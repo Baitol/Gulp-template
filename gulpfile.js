@@ -80,6 +80,6 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scriptos = scriptos;
 exports.build = series(cleardest, images, build);
-exports.buildNotImages = series(cleardest, build);
+
 exports.default = parallel(styles, scriptos, browsersync, watching);
 
